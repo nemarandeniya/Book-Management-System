@@ -1,0 +1,27 @@
+body{
+    background-image: url(../image/library.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.customer-card{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgb(6, 6, 66);
+}
+
+.title-header-div{
+    color: aliceblue;
+    background-color: rgb(81, 80, 78);
+   
+}
+
+.customer-cardbody{
+    background-color: rgba(179, 153, 117, 0.75);
+}
+.btn-color{
+    background-color: rgb(220, 199, 173);
+}
+
+.table-body{
+    background-color: rgba(179, 153, 117, 0.75);
+}

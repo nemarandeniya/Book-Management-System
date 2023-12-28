@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management : Bit Project 2024 </title>
+    <link rel="icon" href="resources/image/1.jpg">
+
+
+    <!-- link bs5 css file -->
+    <link rel="stylesheet" href="resources1/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+
+    <!-- link bs5 js file -->
+    <script src="resources/bootstrap-5.2.3/js/bootstrap.bundle.min.js"> </script>
+
+    <!-- lik fontawesome css file -->
+    <link rel="stylesheet" href="resources/fontawesome-free-6.4.2/css/all.css">
+
+
+    <!-- link employee css file -->
+    <link rel="stylesheet" href="resources1/style/rent.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid mt-2">
+
+        <!-- title area start -->
+        <div class="row m-2">
+            <div class="col-12 text-center 
+            bg-dark text-light">
+                <h2> Rent and Search Books </h2>
+            </div>
+        </div>
+        <!-- title area End -->
+
+
+        <div class="row mt-2">
+
+            <!-- Card area start  -->
+            <div class="col-12">
+                <div class="card customer-card">
+                    <div class="card-body customer-cardbody">
+                        <!-- form Area Start-->
+                        <div class="row mt-2">
+                            <div class="col-12">
+                                <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                    Add new Details
+                                  </button>
+                                  <div style="min-height: 120px;">
+                                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                      <div class="card card-body bg-dark text-light" style="width: 1300px;">
+                                    <form id="rentalForm">
+                                        <div class="row mt-2">
+                                            <div class="col-12">
+                                                <label><span class="text-danger"> *</span> Required</label>
+                                            </div>
+                                        </div><br><br>
+                                        <div class="row">
+                                           <label for="customerId" class="col-6 col-form-label fw-bold">Customer ID :<span class="text-danger"> * </span></label>
+                                           <label for="customerName" class="col-4 col-form-label fw-bold">Customer Name :<span class="text-danger"> * </span></label>
+                                        </div>
+                                       <div class="row">
+                                            <div class="col-6">
+                                             <input type="text" id="customerId" class="form-control" name="customerId" required>
+                                            </div>
+                                            <div class="col-6">
+                                             <input type="text" id="customerName" class="form-control" name="customerName" required>
+                                            </div>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="row mb-1">
+                                                    <label for="isNew" class="form-label fw-bold">
+                                                        New Customer?<span class="text-danger"> * </span>
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input type="radio" class="form-check-input" value="Yes" id="radioYes"
+                                                        required name="isNew">
+                                                    <label for="radioYes" class="form-check-lable fw-bold">Yes</label>
+                                                </div>
+                            
+                                                <div class="form-check form-check-inline">
+                                                    <input type="radio" class="form-check-input" value="No"
+                                                        id="radioNo" required name="isNew">
+                                                    <label for="radioNo" class="form-check-lable fw-bold">No</label>
+                                                </div>
+                                        </div><br><br>
+                                        <div class="row">
+                                            <label for="bookId" class="col-6 col-form-label fw-bold">Book Id : <span class="text-danger">*</span></label>
+                                            <label for="rentalDate" class="col-6 col-form-label fw-bold">Rental Date: <span class="text-danger">*</span></label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" id="bookId" class="form-control" name="bookId" required>
+                                               </div>
+                                               <div class="col-6">
+                                                <input type="date" id="rentalDate" class="form-control" name="rentalDate" required>
+                                               </div>
+                                        </div><br><br>
+                                        <div class="row">
+                                            <label for="dueDate" class="col-6 col-form-label fw-bold">Due Date : <span class="text-danger">*</span></label>
+                                            <label for="rentalFee" class="col-6 col-form-label fw-bold">Rental Fee : <span class="text-danger">*</span></label>
+                                        </div><br>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="date" id="dueDate" class="form-control" name="dueDate" required>
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" id="rentalFee" class="form-control" name="rentalFee" required>
+                                            </div>
+                                        </div><br><br>
+                                        <div class="row">
+                                        <label for="lostBook" class="col-6 col-form-label fw-bold">Lost Book (Fee = Book Price + Ticket) : <span class="text-danger">*</span></label>
+                                        <div class="col-6">
+                                            <select id="" class="form-select">
+                                                <option value=""selected disabled>lost book?</option>
+                                                <option>Yes</option>
+                                                <option>No</option>
+                                            </select>                                        </div>
+                                        </div><br><br><br>
+                                        <div class="row">
+                                            <div class="col-3"></div>
+                                            <div class="col-3"></div>
+                                            <div class="col-3">
+                                                <button type="button" class="btn btn-light fw-bold">Rent book</button>
+
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                
+                            </div>
+                        </div>
+                        <!-- form Area End-->
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <!-- <div class="col-2"></div> -->
+                    <div class="col-12">
+                        <div class="card customer-card">
+                            <div class="card-body customer-cardbody">
+                                <table class="table table-bordered table-hover">
+                                    <thead class=" table-dark">
+                                        <tr>
+                                            <th>Customer Id</th>
+                                            <th>Customer Name</th>
+                                            <th>Book ID</th>
+                                            <th>Rental Date</th>
+                                            <th>Due Date</th>
+                                            <th>Rental Fee</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="table-body">
+                                            <tr>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                            </tr>
+                                            <tr>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                            </tr>
+                                            <tr>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                                <th>test</th>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-2"></div> -->
+                    
+                </div>
+            </div>
+            <!-- Card area end  -->
+
+            <!-- table Area Start-->
+
+            
+            <!-- table Area End-->
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

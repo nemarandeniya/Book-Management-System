@@ -1,0 +1,19 @@
+body{
+    background-image: url(../image/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.employee-card{
+    background-color: rgba(247, 247, 248, 0);
+    border: 2px solid blue;
+}
+
+.title-header-div{
+    background-color: rgba(28, 140, 238, 0.363);
+   
+}
+
+.employee-cardbody{
+    background-color: rgba(178, 184, 184, 0.479);
+}
